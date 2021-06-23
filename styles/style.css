@@ -15,11 +15,50 @@ body {
 
 h1 {
   color: #f2f2f2;
+  font-family: "Big Shoulders Display", serif;
+  line-height: 4;
 }
 
-div {
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  padding: 20px 50px;
+  border-radius: 30px;
+}
+
+.card-container {
+  margin: 80px 30px;
+}
+
+.card {
   min-width: 350px;
-  min-height: 300px;
+  min-height: 500px;
+}
+
+.car-img {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.heading {
+  padding-top: 40px;
+  text-transform: uppercase;
 }
 
 .button {
@@ -32,6 +71,7 @@ div {
 
 .orange {
   background: #e38826;
+  border-radius: 10px 10px 0 0;
 }
 
 .orange .button {
@@ -56,6 +96,7 @@ div {
 
 .d-cyan {
   background: #004241;
+  border-radius: 0 0 10px 10px;
 }
 
 .d-cyan .button {

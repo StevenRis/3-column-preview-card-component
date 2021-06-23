@@ -14,11 +14,6 @@ $light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
 $font-heading: 'Big Shoulders Display', serif;
 $font-paragraph: 'Lexend Deca', sans-serif;
 
-// ### Neutral
-
-// Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-// Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
-
 body {
   font-size: 15px;
   background: $light-gray;
@@ -26,11 +21,50 @@ body {
 
 h1 {
   color: $light-gray;
+  font-family: $font-heading;
+  line-height: 4;
 }
 
-div {
+p {
+  color: $transparent-white;
+  font-family: $font-paragraph;
+  line-height: 1.7;
+}
+
+h1,
+p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  padding: 20px 50px;
+  border-radius: 30px;
+}
+
+.card-container {
+  margin: 80px 30px;
+}
+
+.card {
   min-width: 350px;
-  min-height: 300px;
+  min-height: 500px;
+}
+
+.car-img {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.heading {
+  padding-top: 40px;
+  text-transform: uppercase;
 }
 
 .button {
@@ -43,6 +77,7 @@ div {
 
 .orange {
   background: $orange;
+  border-radius: 10px 10px 0 0;
 
   .button {
     color: $orange;
@@ -65,6 +100,7 @@ div {
 
 .d-cyan {
   background: $d-cyan;
+  border-radius: 0 0 10px 10px;
 
   .button {
     color: $d-cyan;
