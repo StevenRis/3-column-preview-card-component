@@ -22,27 +22,23 @@ body {
 h1 {
   color: $light-gray;
   font-family: $font-heading;
-  line-height: 4;
+  line-height: 3;
 }
 
 p {
   color: $transparent-white;
   font-family: $font-paragraph;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 h1,
 p {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 
 a {
-  position: relative;
-  top: 50px;
-  left: 50px;
-  padding: 20px 50px;
-  border-radius: 30px;
+  text-decoration: none;
+  font-family: $font-paragraph;
 }
 
 .card-container {
@@ -50,8 +46,7 @@ a {
 }
 
 .card {
-  min-width: 350px;
-  min-height: 500px;
+  max-width: 350px;
 }
 
 .car-img {
@@ -63,38 +58,40 @@ a {
 }
 
 .heading {
-  padding-top: 40px;
+  padding-top: 50px;
   text-transform: uppercase;
 }
 
+.btn-container {
+  padding: 50px 0 70px 50px;
+}
+
 .button {
-  background-color: $light-gray;
+  background: $light-gray;
+  padding: 15px 30px;
+  border-radius: 30px;
 }
 
 .button:hover {
-  background-color: transparent;
+  background: transparent;
+  border: 2px solid $light-gray;
+  color: $light-gray;
 }
 
 .orange {
   background: $orange;
   border-radius: 10px 10px 0 0;
 
-  .button {
+  a {
     color: $orange;
-    :hover {
-      color: $light-gray;
-    }
   }
 }
 
 .cyan {
   background: $cyan;
 
-  .button {
+  a {
     color: $cyan;
-    :hover {
-      color: $light-gray;
-    }
   }
 }
 
@@ -102,10 +99,12 @@ a {
   background: $d-cyan;
   border-radius: 0 0 10px 10px;
 
-  .button {
+  a {
     color: $d-cyan;
-    :hover {
-      color: $light-gray;
-    }
   }
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
 }
