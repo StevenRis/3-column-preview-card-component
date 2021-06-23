@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$d-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75); /*for p*/
+$light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+$font-heading: 'Big Shoulders Display', serif;
+$font-paragraph: 'Lexend Deca', sans-serif;
+
+// ### Neutral
+
+// Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+// Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+body {
+  font-size: 15px;
+  background: $light-gray;
+}
+
+h1 {
+  color: $light-gray;
+}
+
+div {
+  min-width: 350px;
+  min-height: 300px;
+}
+
+.button {
+  background-color: $light-gray;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.orange {
+  background: $orange;
+
+  .button {
+    color: $orange;
+    :hover {
+      color: $light-gray;
+    }
+  }
+}
+
+.cyan {
+  background: $cyan;
+
+  .button {
+    color: $cyan;
+    :hover {
+      color: $light-gray;
+    }
+  }
+}
+
+.d-cyan {
+  background: $d-cyan;
+
+  .button {
+    color: $d-cyan;
+    :hover {
+      color: $light-gray;
+    }
+  }
+}

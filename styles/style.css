@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*for p*/
+/*background, headings, buttons*/
+body {
+  font-size: 15px;
+  background: #f2f2f2;
+}
+
+h1 {
+  color: #f2f2f2;
+}
+
+div {
+  min-width: 350px;
+  min-height: 300px;
+}
+
+.button {
+  background-color: #f2f2f2;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.orange {
+  background: #e38826;
+}
+
+.orange .button {
+  color: #e38826;
+}
+
+.orange .button :hover {
+  color: #f2f2f2;
+}
+
+.cyan {
+  background: #006970;
+}
+
+.cyan .button {
+  color: #006970;
+}
+
+.cyan .button :hover {
+  color: #f2f2f2;
+}
+
+.d-cyan {
+  background: #004241;
+}
+
+.d-cyan .button {
+  color: #004241;
+}
+
+.d-cyan .button :hover {
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */
