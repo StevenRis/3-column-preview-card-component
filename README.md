@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/desktop.jpg)
-![](./images/phone.jpg)
+![](./design/desktop.jpg)
+![](./design/phone.jpg)
 
 ### Links
 
