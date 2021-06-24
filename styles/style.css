@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -36,11 +38,40 @@ a {
 }
 
 .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 80px 30px;
+}
+
+@media (min-width: 767px) {
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .card {
   max-width: 350px;
+  min-height: 430px;
+}
+
+@media (min-width: 767px) {
+  .card {
+    max-width: 310px;
+  }
 }
 
 .car-img {
@@ -57,7 +88,13 @@ a {
 }
 
 .btn-container {
-  padding: 50px 0 70px 50px;
+  padding: 50px 0 60px 40px;
+}
+
+@media (min-width: 767px) {
+  .btn-container {
+    padding: 105px 0 75px 50px;
+  }
 }
 
 .button {
@@ -81,6 +118,12 @@ a {
   color: #e38826;
 }
 
+@media (min-width: 767px) {
+  .orange {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
 .cyan {
   background: #006970;
 }
@@ -96,6 +139,12 @@ a {
 
 .d-cyan a {
   color: #004241;
+}
+
+@media (min-width: 767px) {
+  .d-cyan {
+    border-radius: 0 10px 10px 0;
+  }
 }
 
 .attribution {
